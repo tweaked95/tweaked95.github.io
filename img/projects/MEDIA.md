@@ -11,9 +11,9 @@ Drop your files into the folders below using the exact filenames listed. Each na
 
 ---
 
-## I Cam Do It
+## i cam do it
 
-**Folder:** `img/projects/i-can-do-it/`  
+**Folder:** `img/projects/i-cam-do-it/`  
 **Wix page:** `/portfolio/i-cam-do-it`
 
 | Filename | Wix original name | Where it appears |
