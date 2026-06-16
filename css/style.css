@@ -120,6 +120,10 @@ a {
   padding: 0;
 }
 
+.logo {
+  margin-left: 0.75rem;
+}
+
 .logo a {
   font-weight: 800;
   font-size: 1.25rem;
@@ -592,10 +596,6 @@ a {
   .resume-frame {
     min-height: 360px;
     height: 70vh;
-  }
-
-  .logo {
-    margin-left: 0.75rem;
   }
 
   .nav-toggle {
