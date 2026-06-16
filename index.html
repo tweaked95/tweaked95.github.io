@@ -1,11 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Nachiket's Game Design Portfolio</title>
+    <meta charset="UTF-8" />
+    <title>Game Design Portfolio | Nachiket Dabhade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Technical Designer crafting 2D/3D game worlds and systems with Unity, Unreal Engine, C#, C++, and Blueprints."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="content">
-      <h1>Content coming soon!</h1>
-    </div>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">
+          <a href="index.html">Nachiket<br />Dabhade</a>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Site">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-photo">
+          <img
+            src="img/profile.jpg"
+            alt="A picture of Nachiket Dabhade."
+            width="333"
+            height="333"
+          />
+        </div>
+        <div class="hero-content">
+          <h1>
+            Hi! I'm <span class="hero-name">Nachiket</span>
+          </h1>
+          <h2>A <span class="hero-highlight">technical</span> DESIGNER</h2>
+          <p>
+            My main focus is crafting 2D / 3D game worlds and game systems to
+            support the said world using C#, C++ and Blueprints with the help of
+            Unity3D, UnityVR and Unreal Engine. Other experiences include
+            grayblocking, level design, multiple camera usage with Cinemachine,
+            using VFX Graph, Shadergraph and Niagara to create cool effects, 3D
+            scene optimization, and lighting.
+          </p>
+          <p>Got an interesting project? Send me a message!</p>
+          <p>Open to remote work or relocation.</p>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <a href="projects/i-can-do-it.html" class="project-thumb">
+                <img
+                  src="img/projects/i-can-do-it.gif"
+                  alt="I Can Do It showcase"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-details">
+                <p class="project-role">Technical Designer</p>
+                <h3><a href="projects/i-can-do-it.html">I Cam Do It</a></h3>
+                <p class="project-meta">
+                  Unity 3D | C# | Solo Project | Oct 2023 - Current
+                </p>
+                <a href="projects/i-can-do-it.html" class="project-link"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="projects/shaman.html" class="project-thumb">
+                <img
+                  src="img/projects/shaman.gif"
+                  alt="Shaman showcase"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-details">
+                <p class="project-role">Game Designer</p>
+                <h3><a href="projects/shaman.html">Shaman</a></h3>
+                <p class="project-meta">
+                  Unreal Engine 4.26 | Blueprints | Team Project | Sept 2020 -
+                  Sept 2021
+                </p>
+                <a href="projects/shaman.html" class="project-link"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="projects/the-coloring-book.html" class="project-thumb">
+                <img
+                  src="img/projects/the-coloring-book.gif"
+                  alt="The Coloring Book showcase"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-details">
+                <p class="project-role">Game Designer</p>
+                <h3>
+                  <a href="projects/the-coloring-book.html"
+                    >The Coloring Book</a
+                  >
+                </h3>
+                <p class="project-meta">
+                  Unity | C# | Solo Project | Sept 2020 - Sept 2021
+                </p>
+                <a href="projects/the-coloring-book.html" class="project-link"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="projects/luminescence.html" class="project-thumb">
+                <img
+                  src="img/projects/luminescence.gif"
+                  alt="Luminescence showcase"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-details">
+                <p class="project-role">Technical Designer</p>
+                <h3><a href="projects/luminescence.html">Luminescence</a></h3>
+                <p class="project-meta">
+                  Unity VR | C# | Team Project | Jan 2021 – Mar 2021
+                </p>
+                <a href="projects/luminescence.html" class="project-link"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a href="projects/skull-collectors.html" class="project-thumb">
+                <img
+                  src="img/projects/skull-collectors.gif"
+                  alt="Skull Collectors showcase"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project-details">
+                <p class="project-role">Game Programmer</p>
+                <h3>
+                  <a href="projects/skull-collectors.html">Skull Collectors</a>
+                </h3>
+                <p class="project-meta">
+                  C++ | XEngine | ImGui | Sept 2020 – Sept 2020
+                </p>
+                <a href="projects/skull-collectors.html" class="project-link"
+                  >Read More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Nachiket Dabhade.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
