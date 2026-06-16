@@ -1,154 +1,396 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>I Cam Do It | Nachiket Dabhade</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="I Cam Do It — a hybrid 2D/3D platformer with dynamic camera switching, built in Unity."
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav">
-        <div class="logo">
-          <a href="../index.html">Nachiket<br />Dabhade</a>
-        </div>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          aria-label="Open menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Site">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../resume.html">Resume</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main project-detail">
-      <div class="container">
-        <a class="project-back" href="../index.html#projects">&larr; Back to Projects</a>
-        <div class="project-layout">
-          <div class="project-column project-column--copy">
-            <h1 class="page-title">i cam do it</h1>
-            <div class="project-text prose">
-              <p>
-                i cam do it is a Unity project I developed featuring a unique hybrid
-                camera mechanic, seamlessly combining 2D and 3D elements into a
-                thrilling platforming experience. The player can effortlessly switch
-                between a third-person camera perspective, a top-down 2D camera, and
-                a side-view 2D camera with just a press of a button.
-              </p>
-              <p>
-                Gameplay revolves around overcoming obstacles, and the distinct camera
-                perspectives add a fascinating twist to the platforming mechanics. By
-                strategically switching between views, players must navigate the
-                environment, cleverly finding alternative solutions when their ability
-                to jump over obstacles is removed.
-              </p>
-            </div>
-            <div class="project-text prose">
-              <h2>Responsibilities as a Game Designer</h2>
-              <ul>
-                <li>
-                  Envisioned the core concept of i cam do it as a hybrid 2D/3D
-                  platformer.
-                </li>
-                <li>
-                  Brainstormed ideas and developed a unique mechanic that allowed
-                  players to seamlessly switch between different camera perspectives.
-                </li>
-                <li>
-                  Carefully designed the platforming challenges to provide players with
-                  an exciting and intellectually stimulating experience.
-                </li>
-                <li>
-                  Designed the levels to ensure a balance between challenge and reward
-                  by placing obstacles, platforms, and collectibles in strategic
-                  locations.
-                </li>
-                <li>
-                  Leveraged the various camera perspectives to encourage critical
-                  thinking, exploration, and alternate paths to reach goals.
-                </li>
-                <li>
-                  Conducted playtesting sessions to gather feedback and iteratively
-                  adjust the game's difficulty curve.
-                </li>
-                <li>
-                  Designed an intuitive UI for seamless camera switching with a single
-                  button press.
-                </li>
-                <li>
-                  Provided clear design documentation and incorporated playtester
-                  feedback to refine mechanics and overall experience.
-                </li>
-              </ul>
-            </div>
-            <p class="project-meta project-text">
-              <strong>Role:</strong> Technical Designer<br />
-              <strong>Tech:</strong> Unity 3D | C# | Solo Project<br />
-              <strong>Duration:</strong> Oct 2023 – Dec 2024
-            </p>
-          </div>
-          <aside class="project-column project-column--media">
-            <figure class="project-media project-media--lead">
-              <img
-                src="../img/projects/i-cam-do-it/main-menu.png"
-                alt="i cam do it main menu"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="project-media">
-              <img
-                src="../img/projects/i-cam-do-it/showcase-1.gif"
-                alt="i cam do it gameplay showcase 1"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="project-media">
-              <img
-                src="../img/projects/i-cam-do-it/showcase-2.gif"
-                alt="i cam do it gameplay showcase 2"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="project-media">
-              <img
-                src="../img/projects/i-cam-do-it/showcase-3.gif"
-                alt="i cam do it gameplay showcase 3"
-                loading="lazy"
-              />
-            </figure>
-          </aside>
-        </div>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Nachiket Dabhade.</p>
-      </div>
-    </footer>
-    <script src="../js/main.js"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <title>I Cam Do It | Nachiket Dabhade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+
+      name="description"
+
+      content="I Cam Do It — a hybrid 2D/3D platformer with dynamic camera switching, built in Unity."
+
+    />
+
+    <meta name="author" content="Nachiket Dabhade" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="theme-color" content="#2d4239" />
+
+    <link rel="canonical" href="https://nachiketdabhade.com/projects/i-cam-do-it.html" />
+
+    <meta property="og:type" content="article" />
+
+    <meta property="og:site_name" content="Nachiket Dabhade" />
+
+    <meta property="og:locale" content="en_CA" />
+
+    <meta property="og:title" content="I Cam Do It | Nachiket Dabhade" />
+
+    <meta
+
+      property="og:description"
+
+      content="I Cam Do It — a hybrid 2D/3D platformer with dynamic camera switching, built in Unity."
+
+    />
+
+    <meta property="og:url" content="https://nachiketdabhade.com/projects/i-cam-do-it.html" />
+
+    <meta
+
+      property="og:image"
+
+      content="https://nachiketdabhade.com/img/projects/i-cam-do-it/main-menu.png"
+
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="I Cam Do It | Nachiket Dabhade" />
+
+    <meta
+
+      name="twitter:description"
+
+      content="I Cam Do It — a hybrid 2D/3D platformer with dynamic camera switching, built in Unity."
+
+    />
+
+    <meta
+
+      name="twitter:image"
+
+      content="https://nachiketdabhade.com/img/projects/i-cam-do-it/main-menu.png"
+
+    />
+
+    <script type="application/ld+json">
+
+      {
+
+        "@context": "https://schema.org",
+
+        "@type": "VideoGame",
+
+        "name": "I Cam Do It",
+
+        "description": "A hybrid 2D/3D platformer with dynamic camera switching, built in Unity with C#.",
+
+        "url": "https://nachiketdabhade.com/projects/i-cam-do-it.html",
+
+        "image": "https://nachiketdabhade.com/img/projects/i-cam-do-it/main-menu.png",
+
+        "author": {
+
+          "@type": "Person",
+
+          "name": "Nachiket Dabhade",
+
+          "url": "https://nachiketdabhade.com/"
+
+        },
+
+        "genre": "Platformer",
+
+        "gamePlatform": "PC"
+
+      }
+
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+
+      rel="stylesheet"
+
+    />
+
+  </head>
+
+  <body>
+
+    <header class="site-header">
+
+      <div class="container nav">
+
+        <div class="logo">
+
+          <a href="../index.html">Nachiket<br />Dabhade</a>
+
+        </div>
+
+        <button
+
+          class="nav-toggle"
+
+          type="button"
+
+          aria-expanded="false"
+
+          aria-controls="site-nav"
+
+          aria-label="Open menu"
+
+        >
+
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Site">
+
+          <ul>
+
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="../about.html">About</a></li>
+
+            <li><a href="../resume.html">Resume</a></li>
+
+            <li><a href="../contact.html">Contact</a></li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+
+
+    <main class="page-main project-detail">
+
+      <div class="container">
+
+        <a class="project-back" href="../index.html#projects">&larr; Back to Projects</a>
+
+        <div class="project-layout">
+
+          <div class="project-column project-column--copy">
+
+            <h1 class="page-title">i cam do it</h1>
+
+            <div class="project-text prose">
+
+              <p>
+
+                i cam do it is a Unity project I developed featuring a unique hybrid
+
+                camera mechanic, seamlessly combining 2D and 3D elements into a
+
+                thrilling platforming experience. The player can effortlessly switch
+
+                between a third-person camera perspective, a top-down 2D camera, and
+
+                a side-view 2D camera with just a press of a button.
+
+              </p>
+
+              <p>
+
+                Gameplay revolves around overcoming obstacles, and the distinct camera
+
+                perspectives add a fascinating twist to the platforming mechanics. By
+
+                strategically switching between views, players must navigate the
+
+                environment, cleverly finding alternative solutions when their ability
+
+                to jump over obstacles is removed.
+
+              </p>
+
+            </div>
+
+            <div class="project-text prose">
+
+              <h2>Responsibilities as a Game Designer</h2>
+
+              <ul>
+
+                <li>
+
+                  Envisioned the core concept of i cam do it as a hybrid 2D/3D
+
+                  platformer.
+
+                </li>
+
+                <li>
+
+                  Brainstormed ideas and developed a unique mechanic that allowed
+
+                  players to seamlessly switch between different camera perspectives.
+
+                </li>
+
+                <li>
+
+                  Carefully designed the platforming challenges to provide players with
+
+                  an exciting and intellectually stimulating experience.
+
+                </li>
+
+                <li>
+
+                  Designed the levels to ensure a balance between challenge and reward
+
+                  by placing obstacles, platforms, and collectibles in strategic
+
+                  locations.
+
+                </li>
+
+                <li>
+
+                  Leveraged the various camera perspectives to encourage critical
+
+                  thinking, exploration, and alternate paths to reach goals.
+
+                </li>
+
+                <li>
+
+                  Conducted playtesting sessions to gather feedback and iteratively
+
+                  adjust the game's difficulty curve.
+
+                </li>
+
+                <li>
+
+                  Designed an intuitive UI for seamless camera switching with a single
+
+                  button press.
+
+                </li>
+
+                <li>
+
+                  Provided clear design documentation and incorporated playtester
+
+                  feedback to refine mechanics and overall experience.
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <p class="project-meta project-text">
+
+              <strong>Role:</strong> Technical Designer<br />
+
+              <strong>Tech:</strong> Unity 3D | C# | Solo Project<br />
+
+              <strong>Duration:</strong> Oct 2023 – Dec 2024
+
+            </p>
+
+          </div>
+
+          <aside class="project-column project-column--media">
+
+            <figure class="project-media project-media--lead">
+
+              <img
+
+                src="../img/projects/i-cam-do-it/main-menu.png"
+
+                alt="i cam do it main menu"
+
+                loading="lazy"
+
+              />
+
+            </figure>
+
+            <figure class="project-media">
+
+              <img
+
+                src="../img/projects/i-cam-do-it/showcase-1.gif"
+
+                alt="i cam do it gameplay showcase 1"
+
+                loading="lazy"
+
+              />
+
+            </figure>
+
+            <figure class="project-media">
+
+              <img
+
+                src="../img/projects/i-cam-do-it/showcase-2.gif"
+
+                alt="i cam do it gameplay showcase 2"
+
+                loading="lazy"
+
+              />
+
+            </figure>
+
+            <figure class="project-media">
+
+              <img
+
+                src="../img/projects/i-cam-do-it/showcase-3.gif"
+
+                alt="i cam do it gameplay showcase 3"
+
+                loading="lazy"
+
+              />
+
+            </figure>
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+      <div class="container">
+
+        <p>&copy; 2026 Nachiket Dabhade.</p>
+
+      </div>
+
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+  </body>
+
+</html>
+
