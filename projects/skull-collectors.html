@@ -1,110 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Skull Collectors | Nachiket Dabhade</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Skull Collectors — an AI system in C++ with perception, FSM, and steering modules."
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav">
-        <div class="logo">
-          <a href="../index.html">Nachiket<br />Dabhade</a>
-        </div>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          aria-label="Open menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Site">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../resume.html">Resume</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main project-detail">
-      <div class="container">
-        <a class="project-back" href="../index.html#projects">&larr; Back to Projects</a>
-        <div class="project-layout">
-          <div class="project-content prose">
-            <h1 class="page-title">Skull Collectors</h1>
-        <p>
-          Skull Collectors is an AI system developed in C++ over two months,
-          showcasing intelligent decision-making in an interactive environment
-          using XEngine and ImGui.
-        </p>
-        <h2>Modules Implemented</h2>
-        <ul>
-          <li>
-            <strong>Perception Module</strong> — detects skulls in the virtual
-            world, enabling the agent to interact with them effectively.
-          </li>
-          <li>
-            <strong>FSM Module</strong> — makes decisions based on the agent's
-            current state and perception data using defined states and
-            transitions.
-          </li>
-          <li>
-            <strong>Steering Module</strong> — navigates the virtual world with
-            precision, determining optimal movement toward targets or away from
-            obstacles.
-          </li>
-        </ul>
-        <h2>Technologies Used</h2>
-        <p>
-          The project leverages XEngine for rendering, input, and physics, and
-          ImGui for intuitive debugging and monitoring interfaces controlling the
-          AI system's behavior and performance.
-        </p>
-        <p class="project-meta">
-          <strong>Role:</strong> Game Programmer<br />
-          <strong>Tech:</strong> C++ | XEngine | ImGui<br />
-          <strong>Duration:</strong> Sept 2020
-        </p>
-          </div>
-          <div class="project-gallery">
-          <img
-            src="../img/projects/skull-collectors/title.png"
-            alt="Skull Collectors title screen"
-            loading="lazy"
-          />
-          <img
-            src="../img/projects/skull-collectors/showcase.gif"
-            alt="Skull Collectors AI showcase"
-            loading="lazy"
-          />
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Nachiket Dabhade.</p>
-      </div>
-    </footer>
-    <script src="../js/main.js"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skull Collectors | Nachiket Dabhade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Skull Collectors — an AI system in C++ with perception, FSM, and steering modules."
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">
+          <a href="../index.html">Nachiket<br />Dabhade</a>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Site">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main project-detail">
+      <div class="container">
+        <a class="project-back" href="../index.html#projects">&larr; Back to Projects</a>
+        <div class="project-layout">
+          <div class="project-column project-column--copy">
+            <h1 class="page-title">Skull Collectors</h1>
+            <div class="project-text prose">
+              <p>
+                Skull Collectors is an AI system developed in C++ over two months,
+                showcasing intelligent decision-making in an interactive environment
+                using XEngine and ImGui.
+              </p>
+            </div>
+            <div class="project-text prose">
+              <h2>Modules Implemented</h2>
+              <ul>
+                <li>
+                  <strong>Perception Module</strong> — detects skulls in the virtual
+                  world, enabling the agent to interact with them effectively.
+                </li>
+                <li>
+                  <strong>FSM Module</strong> — makes decisions based on the agent's
+                  current state and perception data using defined states and
+                  transitions.
+                </li>
+                <li>
+                  <strong>Steering Module</strong> — navigates the virtual world with
+                  precision, determining optimal movement toward targets or away from
+                  obstacles.
+                </li>
+              </ul>
+              <h2>Technologies Used</h2>
+              <p>
+                The project leverages XEngine for rendering, input, and physics, and
+                ImGui for intuitive debugging and monitoring interfaces controlling the
+                AI system's behavior and performance.
+              </p>
+            </div>
+            <p class="project-meta project-text">
+              <strong>Role:</strong> Game Programmer<br />
+              <strong>Tech:</strong> C++ | XEngine | ImGui<br />
+              <strong>Duration:</strong> Sept 2020
+            </p>
+          </div>
+          <aside class="project-column project-column--media">
+            <figure class="project-media project-media--lead">
+              <img
+                src="../img/projects/skull-collectors/title.png"
+                alt="Skull Collectors title screen"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="project-media">
+              <img
+                src="../img/projects/skull-collectors/showcase.gif"
+                alt="Skull Collectors AI showcase"
+                loading="lazy"
+              />
+            </figure>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Nachiket Dabhade.</p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

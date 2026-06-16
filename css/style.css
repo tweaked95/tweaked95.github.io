@@ -286,10 +286,11 @@ a {
   text-decoration: underline;
 }
 
-.project-meta {
+.project-card .project-meta {
   margin: 0 0 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .project-link {
@@ -428,28 +429,82 @@ a {
   align-items: start;
 }
 
-.project-detail .project-content {
+.project-column--copy {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.project-column--copy > .page-title {
+  margin-bottom: 0;
+}
+
+.project-column--media {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-column--media figure,
+.project-media {
+  margin: 0;
+}
+
+.project-media img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.project-text.prose p,
+.project-text.prose li {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--color-green-dark);
+}
+
+.project-text.prose p {
+  margin: 0 0 1.25rem;
+  text-align: justify;
+}
+
+.project-text.prose h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-green-dark);
+}
+
+.project-column--copy .project-text.prose {
   max-width: none;
+  margin: 0;
+}
+
+.project-text.prose ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.project-text.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.project-text.prose a {
+  color: var(--color-gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .project-detail .page-title {
   text-align: left;
-  margin-bottom: 1.5rem;
 }
 
-.project-detail .prose {
-  max-width: none;
-}
-
-.project-gallery {
-  display: grid;
-  gap: 1.5rem;
+.project-detail .project-meta {
   margin: 0;
-}
-
-.project-gallery img {
-  width: 100%;
-  border-radius: 4px;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--color-green-dark);
 }
 
 .project-back {
@@ -500,17 +555,6 @@ a {
   color: var(--color-green-dark);
 }
 
-.project-back {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  color: var(--color-gold);
-}
-
-.project-back:hover {
-  text-decoration: underline;
-}
-
 /* =========================
    Responsive
 ========================= */
@@ -521,7 +565,26 @@ a {
   }
 
   .project-layout {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .project-column {
+    display: contents;
+  }
+
+  .project-media--lead {
+    order: 1;
+  }
+
+  .project-column--copy .page-title {
+    order: 2;
+  }
+
+  .project-column--copy > *:not(.page-title),
+  .project-column--media > *:not(.project-media--lead) {
+    order: 3;
   }
 }
 
