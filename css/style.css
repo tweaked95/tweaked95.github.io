@@ -7,7 +7,7 @@
   --color-green-card: #3a5247;
   --color-green-text: #2d4239;
   --color-gold: #b69356;
-  --color-cream: #f9f7f2;
+  --color-cream: #f7efdf;
   --color-header: #f0f4ef;
   --color-white: #ffffff;
   --font-display: "Montserrat", system-ui, sans-serif;
@@ -62,6 +62,7 @@ a {
 
 .site-header {
   background: var(--color-header);
+  border-bottom: 3px solid var(--color-green-dark);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -328,6 +329,10 @@ a {
   background-color: var(--color-cream);
 }
 
+.page-main--about {
+  background-color: var(--color-cream);
+}
+
 .page-title {
   margin: 0 0 2rem;
   font-size: clamp(2rem, 5vw, 3rem);
@@ -380,16 +385,50 @@ a {
 
 .about-photo {
   display: block;
-  width: min(100%, 480px);
-  margin: 0 auto 2rem;
+  width: min(333px, 80%);
+  aspect-ratio: 1;
+  margin: 0 auto 2.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.resume-embed {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-frame {
+  display: block;
+  width: 100%;
+  height: min(80vh, 1100px);
+  min-height: 480px;
+  border: 1px solid rgba(45, 66, 57, 0.15);
+  background-color: var(--color-white);
+}
+
+.resume-download {
+  display: block;
+  margin-top: 1.25rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-gold);
+}
+
+.resume-download:hover {
+  text-decoration: underline;
+}
+
+.project-gallery {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-gallery img {
+  width: 100%;
   border-radius: 4px;
 }
 
-.project-hero-image {
-  display: block;
-  width: min(100%, 640px);
-  margin: 0 auto 2rem;
-}
 
 .contact-grid {
   display: grid;
@@ -432,7 +471,10 @@ a {
   background-color: var(--color-cream);
 }
 
-.project-detail .project-hero-image {
+.project-hero-image {
+  display: block;
+  width: min(100%, 640px);
+  margin: 0 auto 2rem;
   border-radius: 4px;
 }
 
@@ -458,6 +500,11 @@ a {
 }
 
 @media (max-width: 768px) {
+  .resume-frame {
+    min-height: 360px;
+    height: 70vh;
+  }
+
   .nav-toggle {
     display: flex;
   }
