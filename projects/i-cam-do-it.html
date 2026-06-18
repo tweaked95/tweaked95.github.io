@@ -10,6 +10,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <meta
+
+      http-equiv="Permissions-Policy"
+
+      content="camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+    />
+
+    <meta
+
+      http-equiv="Content-Security-Policy"
+
+      content="default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src 'self'; connect-src 'self'; upgrade-insecure-requests"
+
+    />
+
     <meta
 
       name="description"
@@ -388,7 +406,13 @@
 
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script
+
+      src="../js/main.js"
+
+      integrity="sha384-01390785bad2f32c98ccd59ba414148ebdf72853f14ee265792eae9a829c6671bc5d5d4fc2e0c2bea524a4fc19294c98"
+
+    ></script>
 
   </body>
 

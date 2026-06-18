@@ -1,0 +1,5 @@
+Contact: mailto:dabhadenachiket@gmail.com
+Preferred-Languages: en
+Canonical: https://nachiketdabhade.com/.well-known/security.txt
+Policy: This is a static portfolio site. Please report security concerns via email.
+Expires: 2027-06-16T00:00:00.000Z
